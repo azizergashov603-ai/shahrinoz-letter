@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#170d1b">
+  <title>Для Шахриноз ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+
+  <button class="home-button" id="homeButton" type="button" aria-label="Вернуться к пластинке">
+    <span class="home-arrow">↩</span><span>На главную</span>
+  </button>
+
+  <main class="experience" id="experience">
+    <header class="topline"><span class="tiny-heart">♡</span><span>МАЛЕНЬКИЙ ПОДАРОК</span><span class="tiny-heart">♡</span></header>
+
+    <section class="music-scene" id="musicScene" aria-label="Музыкальная пластинка">
+      <div class="scene-caption">
+        <p class="eyebrow">A LITTLE SOMETHING FOR</p>
+        <h1>Шахриноз</h1>
+        <p class="scene-subtitle">одна маленькая история в музыке</p>
+      </div>
+
+      <div class="vinyl-stage" id="vinylStage">
+        <div class="sleeve-shadow"></div>
+        <div class="sleeve">
+          <div class="sleeve-grain"></div>
+          <div class="sleeve-art">
+            <span class="sleeve-small">SPECIAL EDITION</span>
+            <span class="sleeve-title">for<br>Shahrinoz</span>
+            <span class="sleeve-heart">♡</span>
+            <span class="sleeve-bottom">A MOMENT TO KEEP</span>
+          </div>
+          <div class="sleeve-edge"></div>
+        </div>
+        <button class="vinyl" id="vinylButton" type="button" aria-label="Включить или остановить музыку" aria-pressed="false">
+          <span class="vinyl-shine"></span>
+          <span class="groove groove-one"></span><span class="groove groove-two"></span>
+          <span class="groove groove-three"></span><span class="groove groove-four"></span>
+          <span class="record-label">
+            <span class="label-ring"></span>
+            <span class="label-name">STEPHANIE</span>
+            <span class="label-artist">Nafeesisboujee</span>
+            <span class="label-hole"></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="track-info">
+        <div class="track-icon"><span>♫</span></div>
+        <div class="track-copy"><strong>Stephanie</strong><span>Nafeesisboujee · для Шахриноз</span></div>
+        <span class="playing-indicator" id="playingIndicator"><i></i><i></i><i></i></span>
+      </div>
+      <p class="tap-hint" id="tapHint">Нажми на пластинку, чтобы включить музыку</p>
+      <p class="volume-note">Тихая фоновая музыка · можно остановить повторным нажатием</p>
+      <button class="continue-button" id="continueButton" type="button">Продолжить <span>↓</span></button>
+      <audio id="audio" src="stephanie.mp3" preload="none" loop></audio>
+    </section>
+
+    <section class="apology-scene" id="apologyScene" aria-live="polite">
+      <div class="apology-mark">♡</div>
+      <p class="eyebrow">ПЕРЕД ТЕМ, КАК НАЧАТЬ</p>
+      <h2>Сначала — прости меня</h2>
+      <p class="apology-text">Я правда хотел подарить тебе это вовремя. Но в какой-то момент растерялся и так и не смог решиться. Прости, что заставил тебя ждать.</p>
+      <span class="apology-line"></span>
+    </section>
+
+    <section class="letter-scene" id="letterScene">
+      <div class="letter-side">
+        <div class="mini-vinyl" id="miniVinyl"><span>♡</span></div>
+        <p>NOW PLAYING</p><strong>Stephanie</strong><small>for Shahrinoz</small>
+        <button class="small-play" id="smallPlay" type="button" aria-label="Включить или остановить музыку" aria-pressed="false">♫</button>
+      </div>
+      <article class="letter-card">
+        <div class="wax-seal" aria-hidden="true"><span>♡</span></div>
+        <div class="letter-top"><span>ЛИЧНО ДЛЯ ТЕБЯ</span><span>♡</span></div>
+        <div class="page-count" id="pageCount">01 / 04</div>
+        <div class="letter-content" id="letterContent"></div>
+        <div class="letter-footer">
+          <div class="page-dots" id="pageDots"></div>
+          <div class="letter-controls">
+            <button class="nav-button" id="prevButton" type="button" aria-label="Предыдущая страница">←</button>
+            <button class="nav-button next-button" id="nextButton" type="button" aria-label="Следующая страница">→</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="finale-trigger" id="finaleTrigger">
+      <button class="finale-button" id="finaleButton" type="button">И последнее кое-что…</button>
+    </div>
+
+    <section class="finale-scene" id="finaleScene" aria-live="polite">
+      <div class="finale-hearts" aria-hidden="true">
+        <span class="heart-float">♡</span><span class="heart-float">♡</span><span class="heart-float">♡</span>
+        <span class="heart-float">♡</span><span class="heart-float">♡</span><span class="heart-float">♡</span>
+        <span class="heart-float">♡</span>
+      </div>
+      <p class="eyebrow">НА САМОМ ДЕЛЕ ЭТО ВСЁ</p>
+      <p class="finale-text">Надеюсь, теперь ты улыбнулась. Обещание всё-таки выполнено. <span class="finale-heart">♡</span></p>
+    </section>
+
+    <footer class="footer-note">СОЗДАНО С ТЕПЛОМ <span>♡</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
